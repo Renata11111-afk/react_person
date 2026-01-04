@@ -1,7 +1,9 @@
 export const Person = ({ person }) => {
   const { name, age, sex, isMarried, partnerName } = person;
 
-  const partnerStatus = sex === 'f' ? 'husband' : 'wife';
+  const partnerStatus = sex === 'f'
+    ? 'husband'
+    : 'wife';
   const partnerText = isMarried
     ? `${partnerName} is my ${partnerStatus}`
     : 'I am not married';
